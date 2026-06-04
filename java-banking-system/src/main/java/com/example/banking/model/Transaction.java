@@ -3,9 +3,7 @@ package com.example.banking.model;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-/**
- * Transaction — an immutable record of a single financial event.
- */
+
 public class Transaction {
 
     public enum Type { DEPOSIT, WITHDRAWAL, TRANSFER_IN, TRANSFER_OUT, INTEREST }

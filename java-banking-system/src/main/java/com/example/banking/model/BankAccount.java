@@ -7,10 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-/**
- * Bank Account — stores balance and transaction history.
- * Uses BigDecimal for all monetary calculations (never double/float for money!).
- */
+
 public class BankAccount {
 
     public enum AccountType { CHECKING, SAVINGS }
@@ -78,7 +75,7 @@ public class BankAccount {
         return "TR" + UUID.randomUUID().toString().replace("-", "").substring(0, 16).toUpperCase();
     }
 
-    // Getters
+    
     public String getAccountNumber() { return accountNumber; }
     public String getOwnerName() { return ownerName; }
     public String getOwnerEmail() { return ownerEmail; }
